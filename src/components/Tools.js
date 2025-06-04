@@ -20,16 +20,13 @@ export default function Tools() {
         { icon: "/icons/tailwind_logo.svg", name: "TAILWIND CSS" },
     ];
 
-    // Create a 16x2 grid with alternating pattern
+    // Create checkerboard pattern for desktop
     const gridItems = [];
     let toolIndex = 0;
     
     for (let row = 0; row < 2; row++) {
         for (let col = 0; col < 16; col++) {
-            // First row: tools on even columns (0, 2, 4...)
-            // Second row: tools on odd columns (1, 3, 5...)
             const shouldShowTool = (row === 0 && col % 2 === 0) || (row === 1 && col % 2 === 1);
-            
             gridItems.push({
                 row,
                 col,
@@ -39,32 +36,53 @@ export default function Tools() {
     }
 
     return (
-        <div className="tools-grid">
-            {gridItems.map((item, index) => (
-                <div 
-                    key={index} 
-                    className="tools-grid-item"
-                    style={{
-                        gridColumn: item.col + 1,
-                        gridRow: item.row + 1
-                    }}
-                >
-                    {item.tool && (
-                        <>
-                            <div className="tool-icon-container">
-                                <Image 
-                                    src={item.tool.icon} 
-                                    alt={item.tool.name}
-                                    width={40}
-                                    height={40}
-                                    className="tool-icon"
-                                />
-                            </div>
-                            <p className="tool-name">{item.tool.name}</p>
-                        </>
-                    )}
-                </div>
-            ))}
+        <div className="tools-container">
+            {/* Desktop: Checkerboard pattern */}
+            <div className="tools-grid">
+                {gridItems.map((item, index) => (
+                    <div 
+                        key={`desktop-${index}`} 
+                        className="tools-grid-item"
+                        style={{
+                            gridColumn: item.col + 1,
+                            gridRow: item.row + 1
+                        }}
+                    >
+                        {item.tool && (
+                            <>
+                                <div className="tool-icon-container">
+                                    <Image 
+                                        src={item.tool.icon} 
+                                        alt={item.tool.name}
+                                        width={30}
+                                        height={30}
+                                        className="tool-icon"
+                                    />
+                                </div>
+                                <p className="tool-name">{item.tool.name}</p>
+                            </>
+                        )}
+                    </div>
+                ))}
+            </div>
+
+            {/* Mobile: Simple grid (hidden by default) */}
+            <div className="tools-grid-mobile">
+                {tools.map((tool, index) => (
+                    <div key={`mobile-${index}`} className="tools-grid-item">
+                        <div className="tool-icon-container">
+                            <Image 
+                                src={tool.icon} 
+                                alt={tool.name}
+                                width={30}
+                                height={30}
+                                className="tool-icon"
+                            />
+                        </div>
+                        <p className="tool-name">{tool.name}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

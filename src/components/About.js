@@ -9,8 +9,8 @@ export default function About() {
                     <Image 
                         src="/images/ace-collage.png" 
                         alt="Ace collage" 
-                        width={500} 
-                        height={500}
+                        width={550} 
+                        height={550}
                         className="about-image"
                     />
                 </div>

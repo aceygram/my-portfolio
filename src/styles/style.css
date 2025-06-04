@@ -505,8 +505,8 @@ color: inherit;
 }
 
 #scene6 .img-container {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -607,15 +607,19 @@ color: inherit;
   transform: scale(1.3);
 }
 
-/* My Tools */
+/* My Tools - Original Styles with Responsive Additions */
+.tools-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Desktop Checkerboard (16x2 grid) */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   padding: 0px 30px 0px 20px;
-  width: 100%;
-  margin-top: 30px;
 }
 
 .tools-grid-item {
@@ -636,7 +640,7 @@ color: inherit;
   transition: .3s;
 }
 
-.tools-grid-item:hover .tool-icon{
+.tools-grid-item:hover .tool-icon {
   width: 45px;
   height: 45px;
 }
@@ -653,6 +657,11 @@ color: inherit;
 .tools-grid-item:hover .tool-name {
   color: var(--orange);
   font-weight: 400;
+}
+
+/* Mobile Grid - Hidden by default */
+.tools-grid-mobile {
+  display: none;
 }
 
 @media (min-height: 800px) {
@@ -802,7 +811,7 @@ color: inherit;
     
 
     .section {
-        min-height: 100vh;
+        min-height: 0px;
         /* padding: 4rem 2rem; */
         opacity: 0;
         transform: translateY(40px);
@@ -831,6 +840,7 @@ color: inherit;
         gap: 60px;
         margin-top: 0px;
         height: 105vh;
+        padding-bottom: 30px;
     }
 
 
@@ -861,7 +871,7 @@ color: inherit;
     }
 
     #scene5 .work-experience-wrapper {
-        padding: 40px 80px 60px 80px;
+        padding: 40px 0px 60px 0px;
         width: 100%;
     }
 
@@ -877,7 +887,18 @@ color: inherit;
     }
 
     #scene6 .contact-wrapper {
-        margin: 100px 50px 0px 50px;
+        margin: 50px 50px 50px 50px;
+    }
+
+    .tools-grid {
+        display: none;
+    }
+  
+    .tools-grid-mobile {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 0 30px 0px 20px;
     }
 }
 
@@ -1072,7 +1093,7 @@ color: inherit;
     }
 
     #scene5 .work-experience-wrapper {
-        padding: 40px 30px 60px 30px;
+        padding: 40px 0px 60px 0px;
     }
 
     #scene5 .work-experience-wrapper .experience .heading {
@@ -1090,6 +1111,24 @@ color: inherit;
     .hero .support-text {
         font-size: clamp(1.2rem, 2.222vw, 2rem);
     }
+
+    /* .tools-grid-mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tool-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .tool-name {
+    font-size: 12px;
+  }
+  
+  .tools-grid-item:hover .tool-icon {
+    width: 35px;
+    height: 35px;
+  } */
 }
 
 @media (max-width: 430px) {

@@ -10,8 +10,8 @@ export default function Contact() {
                 <Image 
                     src="/images/contact-img.svg" 
                     alt="Contact illustration"
-                    width={300}
-                    height={300}
+                    width={250}
+                    height={250}
                 />
             </div>
             <div className="info">
