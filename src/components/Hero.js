@@ -16,7 +16,7 @@ export default function Hero() {
               </button>
               <button>
                 <a
-                  href="/CV/CV_Tone_Elisabeth_Baekholt.pdf"
+                  href="/CV/CV_Promise_Okeke_Front-End_Web_Developer.pdf"
                   className="download-link"
                   target="_blank"
                   download

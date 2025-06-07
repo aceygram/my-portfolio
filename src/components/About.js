@@ -19,9 +19,9 @@ export default function About() {
                 <div className="about-text">
                 <div className="top">
                     <p>
-                        Hi there! I&apos;m a 30-year-old web developer, born on May 14th (Taurus) — focused, creative, and grounded in my approach to building digital experiences. I specialize in designing and developing modern, responsive websites that are as visually appealing as they are functional.
+                        Hi there! I&apos;m a 30-year-old web developer, born on May 14th (Taurus) and I am focused, creative, and grounded in my approach to building digital experiences. I specialize in designing and developing modern, responsive websites that are as visually appealing as they are functional.
 
-                        What drives me most is the art of simplicity. I love creating clean, stunning, and user-friendly designs that catch the eye without overwhelming the viewer. My work reflects a balance between aesthetics and performance — because great design is more than just visuals; it&apos;s about how it feels and functions too.
+                        What drives me most is the art of simplicity. I love creating clean, stunning, and user-friendly designs that catch the eye without overwhelming the viewer. My work reflects a balance between aesthetics and performance, because great design is more than just visuals; it&apos;s about how it feels and functions too.
                     </p>
 
                     <p>
@@ -31,11 +31,11 @@ export default function About() {
                     </p>
                     
                     <p className="span">
-                        I&apos;m also someone who thrives in collaborative environments. I value strong communication, clear goals, and the ability to share ideas with designers, developers, and clients alike. I&apos;m comfortable working solo, but I truly enjoy the energy of team projects — especially when we&apos;re building something meaningful together.
+                        I&apos;m also someone who thrives in collaborative environments. I value strong communication, clear goals, and the ability to share ideas with designers, developers, and clients alike. I&apos;m comfortable working solo, but I truly enjoy the energy of team projects, especially when we&apos;re building something meaningful together.
 
                         Over time, I&apos;ve learned that success in this field isn&apos;t just about writing good code — it&apos;s also about being reliable, adaptable, and self-motivated. I approach every project with a can-do attitude and an eye for improvement, whether it&apos;s refining a component, rethinking a layout, or learning a new tool to get the job done better.
 
-                        So if you&apos;re looking for someone who can build clean, elegant, and engaging web experiences — and have fun doing it — I&apos;d love to connect. Let&apos;s bring your ideas to life, one scroll at a time.
+                        So if you&apos;re looking for someone who can build clean, elegant, and engaging web experiences, and have fun doing it — I&apos;d love to connect. Let&apos;s bring your ideas to life, one scroll at a time.
                     </p>
                 </div>
                 </div>
